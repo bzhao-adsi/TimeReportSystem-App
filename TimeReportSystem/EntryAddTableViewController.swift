@@ -28,19 +28,10 @@ class EntryAddTableViewController: UITableViewController {
     var datePickerVisible=false
     override func viewDidLoad() {
         super.viewDidLoad()
-        //dateLabel.textColor=UIColor.blue
-        //userNameTextField.text=userAccountInfo[0]
         userNameTextField.text=userNameList[userList.index(of: userID)!]
         updateDateLabel()
-        //tableView.beginUpdates()
         updateWorkTime(workTime: workTime)
 
-        //tableView.endUpdates()
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
     func updateWorkTime(workTime: String){
@@ -78,8 +69,6 @@ class EntryAddTableViewController: UITableViewController {
     @IBAction func Done(_ sender: Any) {
         print(dateLabel.text!)
         let headers: HTTPHeaders = [
-            //"Authorization": "Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==",
-            //"Accept": "*/*",
             "Content-Type": "application/json"
         ]
         
@@ -92,8 +81,9 @@ class EntryAddTableViewController: UITableViewController {
             "user":userAddDict
         ]
         
+        print("projectAddDict: \(newEntryParameters)")
         
-        Alamofire.request("http://adsitimereport.azurewebsites.net/timeEntries/create1", method: .post, parameters: newEntryParameters, encoding: JSONEncoding.default).response { response in
+        Alamofire.request("http://adsitimereport.azurewebsites.net/api/timeEntries", method: .post, parameters: newEntryParameters, encoding: JSONEncoding.default).response { response in
             print("Request: \(response.request)")
             print("Response: \(response.response)")
             print("Error: \(response.error)")

@@ -65,8 +65,6 @@ class ViewController: UIViewController {
                     userNameList.append(USR["userName"] as! String)
                     
                     userIndex+=1
-                    //let userID= String(USR["id"] as! Int)
-                    //let passwordList[userIndex] = USR["password"] as? String
                 }
                 
             case.failure(let Error):
@@ -82,7 +80,6 @@ class ViewController: UIViewController {
             
                 print("json: \(json)")
                 let entries = json as! NSArray
-                //numRows=entries.count
                 numRows=0
                 
             
@@ -91,23 +88,15 @@ class ViewController: UIViewController {
                         let userInfo = Array ["user"] as! Dictionary <String, AnyObject>
                     if (String(userInfo["userName"] as! String) == userNameList[userList.index(of: userID)!]){
                         entryDict.add(entries[self.entryIndex] as! AnyObject)
-                        //entryDict.addingObjects(from: [entries[self.entryIndex]])
                         
                         print("entries[self.entryIndex]:\(entries[self.entryIndex])")
                         print("entryDict:\(entryDict)")
                         print("entrycounts:\(entryDict.count)")
                         
-                        /*
-                        entryUserName = String(userInfo["id"] as! Int)
-                        entryIDList.append(String(Array["id"] as! Int))
-                        projectInfo = Array ["project"] as! Dictionary<String, AnyObject>
-                        adsiprojectName.append(projectInfo["projectName"] as! String)
-                        projectStatus.append(projectInfo["status"] as! String)
-                        entryDate.append(Array["date"] as! String)
-                        entryComment.append(Array["comment"] as! String)
+                        //Update Account Information at EntryUpdateViewController
                         userAccountInfo=[userInfo["userName"] as! String,userInfo["firstName"] as! String,userInfo["lastName"] as! String,userInfo["password"] as! String,userInfo["email"] as! String]
+                        //Send Users Informaiton to Entry Add Controller
                         userAddDict=userInfo
-                        */
                         
                         numRows+=1
 
@@ -138,7 +127,7 @@ class ViewController: UIViewController {
     }
 
     @IBOutlet weak var welcomelabel: UILabel!
-    @IBOutlet weak var userIDField:                                                                                      UITextField!
+    @IBOutlet weak var userIDField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
  
     @IBAction func LoginTapped(_ sender: Any) {
@@ -157,74 +146,13 @@ class ViewController: UIViewController {
             self.present(alertController, animated: true, completion: nil)
         }
         
-        
-        
-        /*
-        let myvc = storyboard?.instantiateViewController(withIdentifier: "SecondVC")as! TableViewController
-        myvc.gameofthrone="shenmegui!"//userIDField.text!
-        //myvc.nimei=666
-        self.navigationController?.pushViewController(myvc, animated: true)
-        //navigationController?.pushViewController(myvc, animated: true)
-       
-        if (isUserLoggedIn) {
-            delegate?.displayLabel(controller: self, didDisplayLabel: userIDField)
-         
-        }
-        */
-
-       //TableController.welcome(text: userID)
-        
-        
-        
     }    
  
 }
 
-/*
- Alamofire.request("http://gank.io/api/data/Android/10/1", method: .get, parameters: ["_id": "58a50780421aa9662dc74098"]).responseJSON {response in switch response.result{
- case.success(let json):
- //print(response.request)
- print("json: \(json)")
- let dict = json as! Dictionary<String,AnyObject>
- print("SIRI\(dict["results"])")
- //let resultDict = try JSONSerialization.jsonObject(with: dict["results"]) as? string
- let resultDict=dict["results"] as?NSArray
- print(resultDict![0])
- let targetResult = resultDict![0] as? NSDictionary
- let userID = targetResult!["_id"] as? AnyObject
- print("ID: \(userID)")
- 
- //let userID = resultDict["_id"] as? [String]
- //let Used = resultDict["used"] as! Bool
- //print("ID: \(userID)")
- //print("Used:\(Used)")
- 
- Alamofire.request("https://gank.io/api/add2gank", method: .post, parameters: Parameters, encoding: JSONEncoding.default)
- 
- case.failure(let Error):
- print("\(Error)")
- }
- }
- 
- */
 
-/*
- Alamofire.request("http://gank.io/api/day/history").responseJSON{response in switch response.result{
- case.success(let json):
- //print(response.request)
- print("json: \(json)")
- let dict = json as! Dictionary<String,AnyObject>
- let results = dict["results"] as? [String]
- let Terror = dict["error"] as! Bool
- print("results: \(results)")
- print("error:\(Terror)")
- case.failure(let Error):
- print("\(Error)")
- }
- }
  
  
  
- 
- */// Do any additional setup after loading the view, typically from a nib.
+ /// Do any additional setup after loading the view, typically from a nib.
 
