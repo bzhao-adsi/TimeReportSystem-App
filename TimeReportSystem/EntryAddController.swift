@@ -20,10 +20,14 @@ let entryParameters:Parameters=["Id":"",//Int()
 
 
 class EntryAddController: UIViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Alamofire.request("https://trs.com/api/timeEntries", method: .post, parameters: entryParameters)
+        
+
+        //Alamofire.request(trsUrl+"timeEntries", method: .post, parameters: entryParameters)
+        
         // Do any additional setup after loading the view.
     }
     @IBOutlet weak var Name: UILabel!

@@ -103,11 +103,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TimeReportSystem/EntryAddController.swift"
-            timestampString = "508975551.931259"
+            timestampString = "509488710.224403"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "EndEdit(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -119,11 +119,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TimeReportSystem/EntryAddController.swift"
-            timestampString = "508975551.931259"
+            timestampString = "509488710.224403"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "EndEdit(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -135,11 +135,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TimeReportSystem/ViewController.swift"
-            timestampString = "509036241.037593"
+            timestampString = "510704645.565951"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
             landmarkName = "LoginTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -151,60 +151,253 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TimeReportSystem/ViewController.swift"
-            timestampString = "508975551.931259"
+            timestampString = "510704645.565951"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "ViewController"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
+            landmarkName = "LoginTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeReportSystem/ViewController.swift"
+            timestampString = "510704645.565951"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "LoginTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeReportSystem/ViewController.swift"
+            timestampString = "510704645.565951"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "LoginTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeReportSystem/ViewController.swift"
+            timestampString = "510704645.565951"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
+            landmarkName = "LoginTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeReportSystem/ViewController.swift"
+            timestampString = "510704645.565951"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
+            landmarkName = "LoginTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeReportSystem/EntryAddTableViewController.swift"
+            timestampString = "510705969.747939"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeReportSystem/EntryAddTableViewController.swift"
+            timestampString = "510705969.747939"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeReportSystem/EntryAddTableViewController.swift"
+            timestampString = "510705969.747939"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
+            landmarkName = "tableView(_:heightForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeReportSystem/EntryAddTableViewController.swift"
+            timestampString = "510705969.747939"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeReportSystem/EntryAddTableViewController.swift"
+            timestampString = "510705969.747939"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeReportSystem/EntryAddTableViewController.swift"
+            timestampString = "510705969.747939"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeReportSystem/EntryAddTableViewController.swift"
+            timestampString = "510705969.747939"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeReportSystem/EntryAddTableViewController.swift"
+            timestampString = "510705969.747939"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeReportSystem/EntryAddTableViewController.swift"
+            timestampString = "510705969.747939"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "showDatePicker()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeReportSystem/EntryAddTableViewController.swift"
+            timestampString = "510705969.747939"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "showDatePicker()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeReportSystem/EntryAddTableViewController.swift"
+            timestampString = "510705969.747939"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "EntryAddTableViewController"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TimeReportSystem.ViewController.delegate.getter : weak Swift.Optional&lt;TimeReportSystem.adsiTableViewDelegate&gt;"
-                  moduleName = "TimeReportSystem"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adsiinterniii/Desktop/TRS/TimeReportSystem/TimeReportSystem/ViewController.swift"
-                  timestampString = "508438243.972534"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "54">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TimeReportSystem.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; TimeReportSystem.ViewController"
-                  moduleName = "TimeReportSystem"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adsiinterniii/Desktop/TRS/TimeReportSystem/TimeReportSystem/ViewController.swift"
-                  timestampString = "508438243.9793"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "84">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TimeReportSystem.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;TimeReportSystem.ViewController&gt;"
-                  moduleName = "TimeReportSystem"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adsiinterniii/Desktop/TRS/TimeReportSystem/TimeReportSystem/ViewController.swift"
-                  timestampString = "508438243.981799"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "43">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -213,91 +406,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TimeReportSystem/ViewController.swift"
-            timestampString = "508975551.931259"
+            filePath = "TimeReportSystem/EntryAddTableViewController.swift"
+            timestampString = "510705969.747939"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "adsiTableViewDelegate"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TimeReportSystem.ViewController.__deallocating_deinit"
-                  moduleName = "TimeReportSystem"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adsiinterniii/Desktop/TRS/TimeReportSystem/TimeReportSystem/ViewController.swift"
-                  timestampString = "508438243.987694"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TimeReportSystem.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; TimeReportSystem.ViewController"
-                  moduleName = "TimeReportSystem"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adsiinterniii/Desktop/TRS/TimeReportSystem/TimeReportSystem/ViewController.swift"
-                  timestampString = "508438243.98959"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "84">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TimeReportSystem.ViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;TimeReportSystem.ViewController&gt;"
-                  moduleName = "TimeReportSystem"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adsiinterniii/Desktop/TRS/TimeReportSystem/TimeReportSystem/ViewController.swift"
-                  timestampString = "508438243.993317"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TimeReportSystem.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;TimeReportSystem.ViewController&gt;"
-                  moduleName = "TimeReportSystem"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adsiinterniii/Desktop/TRS/TimeReportSystem/TimeReportSystem/ViewController.swift"
-                  timestampString = "508438243.995134"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "43">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TimeReportSystem/ViewController.swift"
-            timestampString = "509036241.037593"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
-            landmarkName = "LoginTapped(_:)"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "showDatePicker()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -307,13 +422,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TimeReportSystem/ViewController.swift"
-            timestampString = "509036241.037593"
+            filePath = "TimeReportSystem/EntryAddTableViewController.swift"
+            timestampString = "510705969.747939"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
-            landmarkName = "clique(_:)"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "updateWorkTime(workTime:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -323,13 +438,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TimeReportSystem/ViewController.swift"
-            timestampString = "509036241.037593"
+            filePath = "TimeReportSystem/EntryAddTableViewController.swift"
+            timestampString = "510705969.747939"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
-            landmarkName = "LoginTapped(_:)"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "Done(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -339,13 +454,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TimeReportSystem/ViewController.swift"
-            timestampString = "509036241.037593"
+            filePath = "TimeReportSystem/EntryAddTableViewController.swift"
+            timestampString = "510705969.747939"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "LoginTapped(_:)"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "Done(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -355,13 +470,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TimeReportSystem/ViewController.swift"
-            timestampString = "509036241.037593"
+            filePath = "TimeReportSystem/EntryAddTableViewController.swift"
+            timestampString = "510705969.747939"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
-            landmarkName = "LoginTapped(_:)"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "Done(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -371,13 +486,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TimeReportSystem/ViewController.swift"
-            timestampString = "509036241.037593"
+            filePath = "TimeReportSystem/EntryAddTableViewController.swift"
+            timestampString = "510705969.747939"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "103"
             endingLineNumber = "103"
-            landmarkName = "LoginTapped(_:)"
+            landmarkName = "Done(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -387,14 +502,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TimeReportSystem/TableViewController.swift"
-            timestampString = "508868484.527441"
+            filePath = "TimeReportSystem/EntryAddTableViewController.swift"
+            timestampString = "510705969.747939"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "TableViewController"
-            landmarkType = "3">
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "Done(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -403,106 +518,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TimeReportSystem/TableViewController.swift"
-            timestampString = "508868684.852413"
+            filePath = "TimeReportSystem/EntryAddTableViewController.swift"
+            timestampString = "510705969.747939"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "TableViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TimeReportSystem.TableViewController.__deallocating_deinit"
-                  moduleName = "TimeReportSystem"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adsiinterniii/Desktop/TRS/TimeReportSystem/TimeReportSystem/TableViewController.swift"
-                  timestampString = "508876126.585251"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TimeReportSystem.TableViewController.init (style : __C.UITableViewStyle) -&gt; TimeReportSystem.TableViewController"
-                  moduleName = "TimeReportSystem"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adsiinterniii/Desktop/TRS/TimeReportSystem/TimeReportSystem/TableViewController.swift"
-                  timestampString = "508876126.589015"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "35">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TimeReportSystem.TableViewController.__allocating_init (style : __C.UITableViewStyle) -&gt; TimeReportSystem.TableViewController"
-                  moduleName = "TimeReportSystem"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adsiinterniii/Desktop/TRS/TimeReportSystem/TimeReportSystem/TableViewController.swift"
-                  timestampString = "508876126.590986"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TimeReportSystem.TableViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; TimeReportSystem.TableViewController"
-                  moduleName = "TimeReportSystem"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adsiinterniii/Desktop/TRS/TimeReportSystem/TimeReportSystem/TableViewController.swift"
-                  timestampString = "508876126.592949"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "81">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TimeReportSystem.TableViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; TimeReportSystem.TableViewController"
-                  moduleName = "TimeReportSystem"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adsiinterniii/Desktop/TRS/TimeReportSystem/TimeReportSystem/TableViewController.swift"
-                  timestampString = "508876126.594877"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "23">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TimeReportSystem.TableViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;TimeReportSystem.TableViewController&gt;"
-                  moduleName = "TimeReportSystem"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adsiinterniii/Desktop/TRS/TimeReportSystem/TimeReportSystem/TableViewController.swift"
-                  timestampString = "508876126.597017"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "Done(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -511,14 +534,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TimeReportSystem/TableViewController.swift"
-            timestampString = "508868686.662458"
+            filePath = "TimeReportSystem/ProjectSelectionTableViewController.swift"
+            timestampString = "510692339.211798"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "TableViewController"
-            landmarkType = "3">
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -527,14 +550,30 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TimeReportSystem/TableViewController.swift"
-            timestampString = "508868687.610521"
+            filePath = "TimeReportSystem/ProjectSelectionTableViewController.swift"
+            timestampString = "510692339.211798"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "TableViewController"
-            landmarkType = "3">
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeReportSystem/ProjectSelectionTableViewController.swift"
+            timestampString = "510692339.211798"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -544,11 +583,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TimeReportSystem/ViewController.swift"
-            timestampString = "509036241.037593"
+            timestampString = "510700255.500412"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -560,11 +599,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TimeReportSystem/ViewController.swift"
-            timestampString = "509036241.037593"
+            timestampString = "510700255.500412"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -575,13 +614,45 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TimeReportSystem/ViewController.swift"
-            timestampString = "509036241.037593"
+            filePath = "TimeReportSystem/ProjectSelectionTableViewController.swift"
+            timestampString = "510692339.211798"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "60"
             endingLineNumber = "60"
-            landmarkName = "viewDidLoad()"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeReportSystem/TableViewController.swift"
+            timestampString = "510705034.881031"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "TableViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeReportSystem/ViewController.swift"
+            timestampString = "510702700.817871"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "numOfRows()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -592,12 +663,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TimeReportSystem/ViewController.swift"
-            timestampString = "509036241.037593"
+            timestampString = "510704645.565951"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "numOfRows()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -608,12 +679,92 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TimeReportSystem/ViewController.swift"
-            timestampString = "508976465.656274"
+            timestampString = "510704645.565951"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "numOfRows()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeReportSystem/TableViewController.swift"
+            timestampString = "510702020.32038"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeReportSystem/TableViewController.swift"
+            timestampString = "510702020.32038"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeReportSystem/TableViewController.swift"
+            timestampString = "510702020.32038"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeReportSystem/TableViewController.swift"
+            timestampString = "510702020.32038"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeReportSystem/TableViewController.swift"
+            timestampString = "510705034.881031"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -624,12 +775,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TimeReportSystem/ViewController.swift"
-            timestampString = "509036241.037593"
+            timestampString = "510704870.577651"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "numOfRows()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeReportSystem/TableViewController.swift"
+            timestampString = "510705022.277657"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeReportSystem/TableViewController.swift"
+            timestampString = "510705247.173456"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

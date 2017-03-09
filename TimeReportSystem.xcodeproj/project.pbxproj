@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4650F5901E57622A000F4DEE /* EntryUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4650F58F1E57622A000F4DEE /* EntryUpdateViewController.swift */; };
 		4650F5981E57626E000F4DEE /* EntryDeleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4650F5971E57626E000F4DEE /* EntryDeleteViewController.swift */; };
+		4650F59A1E672A43000F4DEE /* EntryAddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4650F5991E672A43000F4DEE /* EntryAddTableViewController.swift */; };
+		4650F5A01E6784A3000F4DEE /* ProjectSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4650F59F1E6784A3000F4DEE /* ProjectSelectionTableViewController.swift */; };
+		4650F5AD1E6878CE000F4DEE /* workTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4650F5AC1E6878CE000F4DEE /* workTimeTableViewController.swift */; };
 		466927031E424810009982E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466927021E424810009982E9 /* AppDelegate.swift */; };
 		466927051E424810009982E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466927041E424810009982E9 /* ViewController.swift */; };
 		466927081E424810009982E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466927061E424810009982E9 /* Main.storyboard */; };
@@ -126,6 +129,9 @@
 /* Begin PBXFileReference section */
 		4650F58F1E57622A000F4DEE /* EntryUpdateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryUpdateViewController.swift; sourceTree = "<group>"; };
 		4650F5971E57626E000F4DEE /* EntryDeleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryDeleteViewController.swift; sourceTree = "<group>"; };
+		4650F5991E672A43000F4DEE /* EntryAddTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryAddTableViewController.swift; sourceTree = "<group>"; };
+		4650F59F1E6784A3000F4DEE /* ProjectSelectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectSelectionTableViewController.swift; sourceTree = "<group>"; };
+		4650F5AC1E6878CE000F4DEE /* workTimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = workTimeTableViewController.swift; path = ../workTimeTableViewController.swift; sourceTree = "<group>"; };
 		466926FF1E424810009982E9 /* TimeReportSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeReportSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		466927021E424810009982E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		466927041E424810009982E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -203,9 +209,12 @@
 				466927021E424810009982E9 /* AppDelegate.swift */,
 				466927041E424810009982E9 /* ViewController.swift */,
 				466927061E424810009982E9 /* Main.storyboard */,
+				4650F5991E672A43000F4DEE /* EntryAddTableViewController.swift */,
+				4650F59F1E6784A3000F4DEE /* ProjectSelectionTableViewController.swift */,
 				4650F5971E57626E000F4DEE /* EntryDeleteViewController.swift */,
 				4650F58F1E57622A000F4DEE /* EntryUpdateViewController.swift */,
 				46D54A091E4B7AF500F1B354 /* EntryAddController.swift */,
+				4650F5AC1E6878CE000F4DEE /* workTimeTableViewController.swift */,
 				46F9AD4E1E43D2B500017318 /* TableViewController.swift */,
 				46F9AD4C1E43D1D500017318 /* TableViewCell.swift */,
 				466927091E424810009982E9 /* Assets.xcassets */,
@@ -444,6 +453,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4650F5AD1E6878CE000F4DEE /* workTimeTableViewController.swift in Sources */,
+				4650F59A1E672A43000F4DEE /* EntryAddTableViewController.swift in Sources */,
 				46F9AD4D1E43D1D500017318 /* TableViewCell.swift in Sources */,
 				46F9AD4F1E43D2B500017318 /* TableViewController.swift in Sources */,
 				46D54A0A1E4B7AF500F1B354 /* EntryAddController.swift in Sources */,
@@ -451,6 +462,7 @@
 				4650F5901E57622A000F4DEE /* EntryUpdateViewController.swift in Sources */,
 				46D54A081E4B797600F1B354 /* AddEntryController.swift in Sources */,
 				466927031E424810009982E9 /* AppDelegate.swift in Sources */,
+				4650F5A01E6784A3000F4DEE /* ProjectSelectionTableViewController.swift in Sources */,
 				46F9AD4B1E43B0FB00017318 /* CustomCell.swift in Sources */,
 				4650F5981E57626E000F4DEE /* EntryDeleteViewController.swift in Sources */,
 				466927311E4249BC009982E9 /* TimeEntryView.swift in Sources */,

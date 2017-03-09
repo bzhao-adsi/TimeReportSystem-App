@@ -7,12 +7,20 @@
 //
 import Foundation
 import UIKit
+import Alamofire
 
-
+var numRows=Int()
+var entryDict:NSMutableArray=[]
+var Array:Dictionary<String, AnyObject>=[:]
+var projectInfo:Dictionary<String, AnyObject>=[:]
+var adsiprojectName:[String] = []
+var projectStatus:[String] = []
+var entryIDList:[String]=[]
 
 class TableViewController: UITableViewController,adsiTableViewDelegate {
     //var gameofthrone = ""
     //var nimei = Int()
+    var entryIndex=0
     
     func displayLabel(controller:ViewController, didDisplayLabel welcomeLabel:UITextField) {
         //gameofthrone=welcomeLabel.text!
@@ -20,23 +28,36 @@ class TableViewController: UITableViewController,adsiTableViewDelegate {
         
     }
     
-    var statusSet=("Approved","Rejected","Pending")
-    var entrySet=()
-    var projectSet=()
-
+    var entires:NSArray=[]
     
-    var numRows:integer_t=6
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        Alamofire.request(trsUrl+"timeEntries/", method: .get).responseJSON{response in switch response.result{
+        case.success(let json):
+            
+            print("json: \(json)")
+            //let entries = json as! NSArray
+            print("numRows: \(numRows)")
+            
+            
+        case.failure(let Error):
+            print("\(Error)")
+            }
+        }
+        
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
         // Dispose of any resources that can be recreated.
     }
 
@@ -49,9 +70,65 @@ class TableViewController: UITableViewController,adsiTableViewDelegate {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        
+        print("number of rows:\(numRows)")
         return Int(numRows)
     }
+   
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ListItem", for: indexPath)
+        
+        // Configure the cell...
+        let projectName=cell.viewWithTag(002) as!UILabel
+        let entryID=cell.viewWithTag(001) as!UILabel
+        let approveStatus=cell.viewWithTag(003) as!UILabel
+        
+        if (indexPath.row) == entryIndex{
+            let entryDictElement = entryDict[entryIndex] as! Dictionary<String, AnyObject>
+            print("entryDictElement:\(entryDictElement)")
+            entryID.text = String(entryDictElement["id"] as! Int)
+            let entryProject = entryDictElement["project"] as! Dictionary<String, AnyObject>
+            projectName.text=entryProject["projectName"] as! String
+            if (entryProject["status"] as! String == "Approved") {
+                approveStatus.textColor=UIColor.blue
+                approveStatus.text="Approved"
+            }else if(entryProject["status"] as!String == "Rejected"){
+                approveStatus.textColor=UIColor.red
+                approveStatus.text="Rejected"
+            }
+            else{
+                approveStatus.textColor=UIColor.orange
+                approveStatus.text="In Processing"
+            }
+            entryIndex += 1
+        }
+        
+        /*
+        if (indexPath.row)  == entryIndex{
+            
+            entryID.text=entryIDList[entryIndex]
+            projectName.text=adsiprojectName[entryIndex]
+            
+            if (projectStatus[entryIndex] == "Approved") {
+                approveStatus.textColor=UIColor.blue
+                approveStatus.text="Approved"
+            }else if(projectStatus[entryIndex] == "Rejected"){
+                approveStatus.textColor=UIColor.red
+                approveStatus.text="Rejected"
+            }
+            else{
+                approveStatus.textColor=UIColor.orange
+                approveStatus.text="In Processing"
+            }
+            entryIndex += 1
+            
+        }
+        */
+        
+        return cell
+    }
     
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
      let cell = tableView.dequeueReusableCell(withIdentifier: "ListItem", for: indexPath)
      
@@ -59,16 +136,46 @@ class TableViewController: UITableViewController,adsiTableViewDelegate {
         let projectName=cell.viewWithTag(002) as!UILabel
         let entryID=cell.viewWithTag(001) as!UILabel
         let approveStatus=cell.viewWithTag(003) as!UILabel
-        if indexPath.row%6==0{
-        entryID.text="123"
-        projectName.text="TRS"
-        approveStatus.textColor=UIColor.red
-        approveStatus.text="Rejected"
-
+        
+        if (indexPath.row)  == entryIndex{
+            //entryID.text=String(Array["id"] as! Int)
+            entryID.text=entryIDList[entryIndex]
+            projectName.text=adsiprojectName[entryIndex]
+            
+            if (projectStatus[entryIndex] == "Approved") {
+                approveStatus.textColor=UIColor.blue
+                approveStatus.text="Approved"
+            }else if(projectStatus[entryIndex] == "Rejected"){
+                approveStatus.textColor=UIColor.red
+                approveStatus.text="Rejected"
+            }
+            else{
+                approveStatus.textColor=UIColor.orange
+                approveStatus.text="In Processing"
+            }
+            entryIndex += 1
+            
         }
      return cell
      }
-    
+    */
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //let cell=tableView.cellForRow(at: indexPath)
+        let entryDictElement = entryDict[indexPath.row] as! Dictionary<String, AnyObject>
+        let entryProject = entryDictElement["project"] as! Dictionary<String, AnyObject>
+
+        
+        entryDetails.append(entryDictElement["date"] as! String)
+        entryDetails.append(entryProject["status"] as! String)
+        entryDetails.append(entryDictElement["comment"] as! String)
+        /*
+        entryDetails.append(entryDate[indexPath.row])
+        entryDetails.append(projectStatus[indexPath.row])
+        entryDetails.append(entryComment[indexPath.row])
+        */
+            
+        
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "NavEntry" {
