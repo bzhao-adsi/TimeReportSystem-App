@@ -18,12 +18,10 @@ var projectStatus:[String] = []
 var entryIDList:[String]=[]
 
 class TableViewController: UITableViewController,adsiTableViewDelegate {
-    //var gameofthrone = ""
-    //var nimei = Int()
+
     var entryIndex=0
     
     func displayLabel(controller:ViewController, didDisplayLabel welcomeLabel:UITextField) {
-        //gameofthrone=welcomeLabel.text!
         print("welcome label:\(welcomeLabel.text)")
         
     }
@@ -103,77 +101,22 @@ class TableViewController: UITableViewController,adsiTableViewDelegate {
             entryIndex += 1
         }
         
-        /*
-        if (indexPath.row)  == entryIndex{
-            
-            entryID.text=entryIDList[entryIndex]
-            projectName.text=adsiprojectName[entryIndex]
-            
-            if (projectStatus[entryIndex] == "Approved") {
-                approveStatus.textColor=UIColor.blue
-                approveStatus.text="Approved"
-            }else if(projectStatus[entryIndex] == "Rejected"){
-                approveStatus.textColor=UIColor.red
-                approveStatus.text="Rejected"
-            }
-            else{
-                approveStatus.textColor=UIColor.orange
-                approveStatus.text="In Processing"
-            }
-            entryIndex += 1
-            
-        }
-        */
         
         return cell
     }
     
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-     let cell = tableView.dequeueReusableCell(withIdentifier: "ListItem", for: indexPath)
-     
-     // Configure the cell...
-        let projectName=cell.viewWithTag(002) as!UILabel
-        let entryID=cell.viewWithTag(001) as!UILabel
-        let approveStatus=cell.viewWithTag(003) as!UILabel
-        
-        if (indexPath.row)  == entryIndex{
-            //entryID.text=String(Array["id"] as! Int)
-            entryID.text=entryIDList[entryIndex]
-            projectName.text=adsiprojectName[entryIndex]
-            
-            if (projectStatus[entryIndex] == "Approved") {
-                approveStatus.textColor=UIColor.blue
-                approveStatus.text="Approved"
-            }else if(projectStatus[entryIndex] == "Rejected"){
-                approveStatus.textColor=UIColor.red
-                approveStatus.text="Rejected"
-            }
-            else{
-                approveStatus.textColor=UIColor.orange
-                approveStatus.text="In Processing"
-            }
-            entryIndex += 1
-            
-        }
-     return cell
-     }
-    */
+
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //let cell=tableView.cellForRow(at: indexPath)
         let entryDictElement = entryDict[indexPath.row] as! Dictionary<String, AnyObject>
         let entryProject = entryDictElement["project"] as! Dictionary<String, AnyObject>
-
         
         entryDetails.append(entryDictElement["date"] as! String)
         entryDetails.append(entryProject["status"] as! String)
         entryDetails.append(entryDictElement["comment"] as! String)
-        /*
-        entryDetails.append(entryDate[indexPath.row])
-        entryDetails.append(projectStatus[indexPath.row])
-        entryDetails.append(entryComment[indexPath.row])
-        */
-            
+        
+        entryDeleteId=entryDictElement["id"] as! Int
+
         
     }
     
@@ -191,11 +134,6 @@ class TableViewController: UITableViewController,adsiTableViewDelegate {
     
     
     /*
-    func welcome(text: String)->String{
-        gameofthrone=text
-        return gameofthrone
-    }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

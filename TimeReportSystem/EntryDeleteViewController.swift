@@ -13,6 +13,7 @@ var entryDetails:[String]=[]
 var entryUserName:String=""
 var entryComment:[String]=[]
 var entryDate:[String]=[]
+var entryDeleteId=Int()
 
 
 class EntryDeleteViewController: UIViewController {
@@ -24,12 +25,10 @@ class EntryDeleteViewController: UIViewController {
     
     @IBAction func deleteEntry(_ sender: Any) {
         let deleteEntryParameters:Parameters=[
-            "entryId": "3",
-            "projectId":"1",
-            "userId":"33"
+            "id": entryDeleteId
         ]
         
-        Alamofire.request("http://adsitimereport.azurewebsites.net/timeEntries", method: .post, parameters: deleteEntryParameters ).response { response in
+        Alamofire.request("http://adsitimereport.azurewebsites.net/api/timeEntries", method: .delete, parameters: deleteEntryParameters ).response { response in
             print("Request: \(response.request)")
             print("Response: \(response.response)")
             print("Error: \(response.error)")
@@ -38,8 +37,12 @@ class EntryDeleteViewController: UIViewController {
                 print("Data: \(utf8Text)")
             }
         }
-
-
+        
+        let alertController = UIAlertController(title: "Status", message:
+            "Entry has been deleted! " , preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.default,handler: nil))
+        self.present(alertController, animated: true, completion: nil)
+        
     }
     
     override func viewDidLoad() {
