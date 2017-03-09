@@ -47,7 +47,6 @@ class ViewController: UIViewController {
             print("\(Error)")
             }
         }
-
         
         
         findUser()

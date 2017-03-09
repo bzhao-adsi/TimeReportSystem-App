@@ -93,7 +93,7 @@ class EntryAddTableViewController: UITableViewController {
         ]
         
         
-        Alamofire.request("http://adsitimereport.azurewebsites.net/api/timeEntries", method: .post, parameters: newEntryParameters, encoding: JSONEncoding.default).response { response in
+        Alamofire.request("http://adsitimereport.azurewebsites.net/timeEntries/create1", method: .post, parameters: newEntryParameters, encoding: JSONEncoding.default).response { response in
             print("Request: \(response.request)")
             print("Response: \(response.response)")
             print("Error: \(response.error)")
