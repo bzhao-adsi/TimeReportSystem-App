@@ -1,5 +1,6 @@
 # TimeReportSystem-App
 Mobile Part for Time Report System
+
 Update Log:
 Feb 27, 2017 
 First Commit TRS Project Mobile Part 
