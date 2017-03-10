@@ -97,8 +97,8 @@ class EntryAddTableViewController: UITableViewController {
         
         workTime=""
         
-        let TVC = TableViewController()
-        TVC.tableViewUpdate()
+        //let TVC = TableViewController()
+        //TVC.tableViewUpdate()
         
         dismiss(animated: true, completion: nil)
     }

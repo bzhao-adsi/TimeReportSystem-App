@@ -44,7 +44,10 @@ class EntryDeleteViewController: UIViewController {
         self.present(alertController, animated: true, completion: nil)
         
         let TVC = TableViewController()
-        TVC.tableViewUpdate()
+        TVC.cancel()
+        
+        //let TVC = TableViewController()
+        //TVC.tableViewUpdate()
     }
     
     override func viewDidLoad() {

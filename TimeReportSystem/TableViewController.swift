@@ -66,6 +66,13 @@ class TableViewController: UITableViewController,adsiTableViewDelegate {
         return 1
     }
 
+    @IBAction func Back(_ sender: Any) {
+        dismiss(animated: false, completion: nil)
+    }
+    
+    func cancel(){
+        dismiss(animated: false, completion: nil)
+    }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
@@ -119,6 +126,7 @@ class TableViewController: UITableViewController,adsiTableViewDelegate {
         
     }
     
+    /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "NavEntry" {
             let navigationController = segue.destination as! UINavigationController
@@ -127,7 +135,7 @@ class TableViewController: UITableViewController,adsiTableViewDelegate {
             controller.delegate = self
         }
     }
- 
+ */
     func entryRequest(){
         Alamofire.request("http://adsitimereport.azurewebsites.net/api/timeEntries", method: .get).responseJSON{response in switch response.result{
         case.success(let json):
