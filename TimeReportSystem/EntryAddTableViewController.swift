@@ -63,6 +63,7 @@ class EntryAddTableViewController: UITableViewController {
 
     
     @IBAction func Cancel(_ sender: Any) {
+        workTime=""
         dismiss(animated: true, completion: nil)
     }
     
@@ -95,6 +96,10 @@ class EntryAddTableViewController: UITableViewController {
         }
         
         workTime=""
+        
+        let TVC = TableViewController()
+        TVC.tableViewUpdate()
+        
         dismiss(animated: true, completion: nil)
     }
     

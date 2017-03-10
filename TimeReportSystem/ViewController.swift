@@ -76,12 +76,10 @@ class ViewController: UIViewController {
         func numOfRows(){
             Alamofire.request(trsUrl+"timeEntries/", method: .get).responseJSON{response in switch response.result{
             case.success(let json):
-            
                 print("json: \(json)")
                 let entries = json as! NSArray
                 numRows=0
-                
-            
+
                 while self.entryIndex < entries.count {
                     Array = entries[self.entryIndex] as! Dictionary<String, AnyObject>
                         let userInfo = Array ["user"] as! Dictionary <String, AnyObject>
@@ -98,7 +96,6 @@ class ViewController: UIViewController {
                         userAddDict=userInfo
                         
                         numRows+=1
-
                     }
                     
                     self.entryIndex += 1

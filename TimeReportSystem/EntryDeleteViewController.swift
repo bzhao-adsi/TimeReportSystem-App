@@ -43,6 +43,8 @@ class EntryDeleteViewController: UIViewController {
         alertController.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.default,handler: nil))
         self.present(alertController, animated: true, completion: nil)
         
+        let TVC = TableViewController()
+        TVC.tableViewUpdate()
     }
     
     override func viewDidLoad() {

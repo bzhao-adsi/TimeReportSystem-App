@@ -21,6 +21,7 @@ class TableViewController: UITableViewController,adsiTableViewDelegate {
 
     var entryIndex=0
     
+
     func displayLabel(controller:ViewController, didDisplayLabel welcomeLabel:UITextField) {
         print("welcome label:\(welcomeLabel.text)")
         
@@ -34,17 +35,16 @@ class TableViewController: UITableViewController,adsiTableViewDelegate {
         Alamofire.request(trsUrl+"timeEntries/", method: .get).responseJSON{response in switch response.result{
         case.success(let json):
             
-            print("json: \(json)")
+            //print("json: \(json)")
             //let entries = json as! NSArray
             print("numRows: \(numRows)")
-            
             
         case.failure(let Error):
             print("\(Error)")
             }
         }
-        
-
+        //tableView.refreshControl = refreshControl
+        //tableView.addSubview(refreshControl)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -69,20 +69,20 @@ class TableViewController: UITableViewController,adsiTableViewDelegate {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
-        print("number of rows:\(numRows)")
-        return Int(numRows)
+        print("number of rows:\(entryDict.count)")
+        return entryDict.count
     }
    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListItem", for: indexPath)
         
-        // Configure the cell...
+
         let projectName=cell.viewWithTag(002) as!UILabel
         let entryID=cell.viewWithTag(001) as!UILabel
         let approveStatus=cell.viewWithTag(003) as!UILabel
         
-        if (indexPath.row) == entryIndex{
-            let entryDictElement = entryDict[entryIndex] as! Dictionary<String, AnyObject>
+        //if (indexPath.row) == entryIndex{
+            let entryDictElement = entryDict[indexPath.row] as! Dictionary<String, AnyObject>
             print("entryDictElement:\(entryDictElement)")
             entryID.text = String(entryDictElement["id"] as! Int)
             let entryProject = entryDictElement["project"] as! Dictionary<String, AnyObject>
@@ -98,8 +98,8 @@ class TableViewController: UITableViewController,adsiTableViewDelegate {
                 approveStatus.textColor=UIColor.orange
                 approveStatus.text="In Processing"
             }
-            entryIndex += 1
-        }
+            //entryIndex += 1
+        //}
         
         
         return cell
@@ -116,7 +116,6 @@ class TableViewController: UITableViewController,adsiTableViewDelegate {
         entryDetails.append(entryDictElement["comment"] as! String)
         
         entryDeleteId=entryDictElement["id"] as! Int
-
         
     }
     
@@ -129,7 +128,47 @@ class TableViewController: UITableViewController,adsiTableViewDelegate {
         }
     }
  
- 
+    func entryRequest(){
+        Alamofire.request("http://adsitimereport.azurewebsites.net/api/timeEntries", method: .get).responseJSON{response in switch response.result{
+        case.success(let json):
+            let entries = json as! NSArray
+            for index in entries {
+                let entryArray = index as! Dictionary<String, AnyObject>
+                let userInfo = entryArray ["user"] as! Dictionary <String, AnyObject>
+                if (String(userInfo["userName"] as! String) == userNameList[userList.index(of: userID)!]){
+                    entryDict.add(index as! AnyObject)
+                    print("index content: \(index)")
+                    print("entryDict for this iteration:\(entryDict)")
+                }
+            }
+        case.failure(let Error):
+            print("\(Error)")
+            }
+        }
+        tableView.reloadData()
+    }
+    
+    @IBAction func reloadData(_ sender: Any) {
+        //tableViewUpdate()
+        tableView.reloadData()
+    }
+    
+    func tableViewUpdate(){
+        //tableView.beginUpdates()
+        //entryIndex=0
+        
+        entryDict.removeAllObjects()
+        let VC = ViewController()
+        VC.entryIndex=0
+        VC.numOfRows()
+        //self.entryRequest()
+        
+        print("entryDict 123: \(entryDict)")
+        tableView.reloadData()
+        
+        print("entryDict Count: \(entryDict.count)")
+        //tableView.endUpdates()
+    }
     
     
     
