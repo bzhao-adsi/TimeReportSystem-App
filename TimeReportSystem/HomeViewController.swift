@@ -28,9 +28,7 @@ class HomeViewController: UIViewController {
         let VC = ViewController()
         VC.entryIndex=0
         VC.numOfRows()
-        sleep(2)
-        //self.entryRequest()
-        
+        sleep(3)
     }
 
     /*

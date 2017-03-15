@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-var entryDetails:[String]=[]
+var entryDetails:[String]=["","",""]
 var entryUserName:String=""
 var entryComment:[String]=[]
 var entryDate:[String]=[]

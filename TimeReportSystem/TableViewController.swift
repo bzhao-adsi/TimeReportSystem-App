@@ -32,17 +32,7 @@ class TableViewController: UITableViewController,adsiTableViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Alamofire.request(trsUrl+"timeEntries/", method: .get).responseJSON{response in switch response.result{
-        case.success(let json):
-            
-            //print("json: \(json)")
-            //let entries = json as! NSArray
-            print("numRows: \(numRows)")
-            
-        case.failure(let Error):
-            print("\(Error)")
-            }
-        }
+
         //tableView.refreshControl = refreshControl
         //tableView.addSubview(refreshControl)
         // Uncomment the following line to preserve selection between presentations
@@ -116,16 +106,17 @@ class TableViewController: UITableViewController,adsiTableViewDelegate {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //let cell=tableView.cellForRow(at: indexPath)
+        print("entryDict TableViewController: \(entryDict)")
         let entryDictElement = entryDict[indexPath.row] as! Dictionary<String, AnyObject>
         let entryProject = entryDictElement["project"] as! Dictionary<String, AnyObject>
         
-        entryDetails.append(entryDictElement["date"] as! String)
-        entryDetails.append(entryProject["status"] as! String)
-        entryDetails.append(entryDictElement["comment"] as! String)
+        entryDetails[0]=(entryDictElement["date"] as! String)
+        entryDetails[1]=(entryProject["status"] as! String)
+        entryDetails[2]=(entryDictElement["comment"] as! String)
         
         entryDeleteId=entryDictElement["id"] as! Int
-        
     }
+    
     
     /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -136,7 +127,8 @@ class TableViewController: UITableViewController,adsiTableViewDelegate {
             controller.delegate = self
         }
     }
- */
+     */
+    
     func entryRequest(){
         Alamofire.request("http://adsitimereport.azurewebsites.net/api/timeEntries", method: .get).responseJSON{response in switch response.result{
         case.success(let json):
