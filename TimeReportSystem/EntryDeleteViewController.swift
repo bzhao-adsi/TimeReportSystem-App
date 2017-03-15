@@ -41,8 +41,10 @@ class EntryDeleteViewController: UIViewController {
         let alertController = UIAlertController(title: "Status", message:
             "Entry has been deleted! " , preferredStyle: UIAlertControllerStyle.alert)
         alertController.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.default,handler: nil))
-        self.present(alertController, animated: true, completion: nil)
+        //self.present(alertController, animated: true, completion: nil)
         
+        
+        dismiss(animated: true, completion: nil)
         let TVC = TableViewController()
         TVC.cancel()
         

@@ -940,10 +940,10 @@
             </objects>
             <point key="canvasLocation" x="1750" y="-703"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="3Zj-ho-NAo">
             <objects>
-                <viewController id="N0h-L2-sLg" sceneMemberID="viewController">
+                <viewController id="N0h-L2-sLg" customClass="HomeViewController" customModule="TimeReportSystem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Pro-hz-BzE"/>
                         <viewControllerLayoutGuide type="bottom" id="m9x-Cr-H5H"/>
@@ -974,7 +974,8 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjY-Z8-6BX">
                                 <rect key="frame" x="127" y="345" width="121" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.56224350030000003" green="0.75785920880000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <state key="normal" title="Add New Entry">
                                     <color key="titleColor" red="1" green="0.99216115149999995" blue="0.98923386619999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -990,6 +991,7 @@
                                     <color key="titleColor" red="1" green="0.99216115149999995" blue="0.98923386619999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="showEntryView:" destination="N0h-L2-sLg" eventType="touchUpInside" id="CxB-m7-aFV"/>
                                     <segue destination="Xwk-sG-9nu" kind="presentation" id="Jee-2M-IFg"/>
                                 </connections>
                             </button>

@@ -89,6 +89,7 @@ class TableViewController: UITableViewController,adsiTableViewDelegate {
         let approveStatus=cell.viewWithTag(003) as!UILabel
         
         //if (indexPath.row) == entryIndex{
+        
             let entryDictElement = entryDict[indexPath.row] as! Dictionary<String, AnyObject>
             print("entryDictElement:\(entryDictElement)")
             entryID.text = String(entryDictElement["id"] as! Int)
